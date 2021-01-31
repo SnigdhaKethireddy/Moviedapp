@@ -1,6 +1,6 @@
 Team Members:
-Geethika Lingamaneni - 1001743466
 Snigdha Kethireddy   - 1001757794
+Geethika Lingamaneni - 1001743466
 
 Steps to Run the Project:
 
