@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Movie Awards</title>
+  </head>
+  <body style="align-content: center;">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+    <style>
+      body {
+        background-image: url('movie2.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;  
+        background-size: cover;
+      }
+      table.table {
+  margin-left: auto; 
+  margin-right: auto;
+}
+    </style>
+    <div class="container" style="color: azure; text-align: center;">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="text-center" style="text-align:  center; font-size: xxx-large;" >Movie Awards</h1>
+         
+          <br/>
+          <div id="m1">
+            <p class="text-center" style="text-align: center !important;">Please connect to metamask and ganache</p>
+          </div>
+          <div id="content" style="display: none; text-align: center !important;">
+            <table class="table" style="text-align: center !important; " >
+              <thead style="text-align: center;">
+                <tr style="text-align: center;" >
+                  <th scope="col"></th>
+                  <th scope="col"><b>Movie Name</b></th>
+                  <th scope="col"><b>Votes</b></th>
+                </tr>
+              </thead>
+              <tbody id="movieResults">
+              </tbody>
+            </table>
+            
+            <form onSubmit="App.castVote(); return false;">
+              <div class="form-1">
+                
+                <br><br><br>
+                <label for="movieSelect" ><b>Select Movie : </b></label>
+                <select class="form-2" id="movieSelect">
+                </select>
+                <button type="submit" class="btn btn-primary"><b>Vote</b> </button>
+              </div>
+              <br>
+              <br>
+              <br>
+              <br><br>
+              <br>
+              <br>
+              <br>
+              <hr style="width: 650px;"/>
+            </form>
+            <p id="accountAddress" class="text-center"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
